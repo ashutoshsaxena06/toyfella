@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import SideNavbar from './components/SideNavbar';
+import SubNavbar from './components/SubNavbar';
 import LandingPage from './pages/LandingPage';
 import CartPage from './pages/CartPage';
 import LoginPage from './pages/LoginPage';
@@ -24,7 +24,7 @@ const App = () => {
     <Router>
       <div className="flex flex-col min-h-screen">
         <Header />
-        <SideNavbar setAgeFilter={setAgeFilter} />
+        <SubNavbar setAgeFilter={setAgeFilter} />
         <main className="flex-grow">
           <Routes>
             <Route
