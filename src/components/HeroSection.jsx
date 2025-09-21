@@ -20,7 +20,7 @@ const HeroSection = () => {
     return () => clearInterval(interval);
   }, []);
   return (
-    <div className="relative w-full min-h-screen mt-10 flex items-center justify-center overflow-hidden bg-black">
+  <div className="relative w-full min-h-screen mt-10 flex items-center justify-center overflow-hidden bg-primary">
       {/* Background Image Slider */}
       <AnimatePresence>
         <motion.div
@@ -40,7 +40,7 @@ const HeroSection = () => {
       </AnimatePresence>
 
       {/* Dark Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/20 to-black/80"></div>
+  <div className="absolute inset-0 bg-gradient-to-b from-primary/40 via-secondary/20 to-secondary/80"></div>
 
       {/* Hero Content */}
       <div className="absolute text-white text-center px-6 py-4 bg-white/10 backdrop-blur-md rounded-2xl shadow-lg">

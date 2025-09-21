@@ -1,3 +1,7 @@
+body {
+  background: linear-gradient(135deg, #FFFDE4 0%, #FFFAF0 100%);
+  color: #444141;
+}
 #root {
   max-width: 1280px;
   margin: 0 auto;

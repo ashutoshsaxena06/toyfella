@@ -9,7 +9,7 @@ const videoData = [
 
 const SecondSection = () => {
   return (
-    <div className="w-full bg-gradient-to-b from-black via-black/80 to-black/95 py-20 px-4 md:px-10 lg:px-20">
+  <div className="w-full bg-gradient-to-b from-primary/30 via-secondary/80 to-secondary/95 py-20 px-4 md:px-10 lg:px-20">
       {/* Section Title */}
       <h2 className="text-center text-white text-3xl md:text-5xl font-extrabold mb-10">
         <span className="text-yellow-400">Explore</span> Our Toy Collection

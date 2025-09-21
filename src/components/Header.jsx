@@ -3,11 +3,16 @@ import { FaShoppingCart, FaUser } from 'react-icons/fa';
 
 const Header = () => {
   return (
-    <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-black/80 to-black/60 backdrop-blur-lg text-white px-6 py-4 flex justify-between items-center shadow-lg z-50">
+  <header className="fixed top-0 left-0 w-full bg-gradient-to-r from-primary/80 to-secondary/60 backdrop-blur-lg text-gray-900 px-6 py-4 flex justify-between items-center shadow-lg z-50">
       {/* Logo */}
-      <h1 className="text-3xl font-extrabold tracking-wide drop-shadow-md">
-        <span className="text-yellow-400">Toy</span>Fella
-      </h1>
+      <a href="/" className="flex items-center" aria-label="ToyFella Home">
+        <img
+          src="/toyfella_svg.svg"
+          alt="ToyFella Logo"
+          className="h-10 w-auto drop-shadow-md"
+          style={{ minWidth: '40px' }}
+        />
+      </a>
 
       {/* Navigation Links */}
       <nav className="hidden md:flex space-x-6 text-lg font-medium">

@@ -23,7 +23,7 @@ const SubNavbar = ({ setAgeFilter }) => {
   ];
 
   return (
-    <div className="bg-gradient-to-r from-black/60 to-black/40 backdrop-blur-lg text-white py-3 px-6 flex justify-center shadow-lg fixed top-16 left-0 w-full z-40">
+  <div className="bg-gradient-to-r from-primary/60 to-secondary/40 backdrop-blur-lg text-gray-900 py-3 px-6 flex justify-center shadow-lg fixed top-16 left-0 w-full z-40">
       <ul className="flex gap-8">
         {navItems.map((item) => (
           <li
@@ -36,15 +36,17 @@ const SubNavbar = ({ setAgeFilter }) => {
               <span className="text-yellow-400">{item.icon}</span> {item.name}
             </button>
             {item.subItems && hoveredItem === item.name && (
-              <ul className="absolute left-0 mt-2 bg-black/90 shadow-lg py-2 rounded-md w-40">
+              <ul className="absolute left-0 mt-2 bg-yellow-300/90 shadow-lg py-2 rounded-xl min-w-[180px] w-auto">
                 {item.subItems.map((age) => (
                   <li key={age}>
-                    <button
-                      onClick={() => setAgeFilter(age)}
-                      className="block w-full text-left px-4 py-2 text-sm text-gray-300 hover:text-yellow-400 hover:bg-white/10 transition"
+                    <a
+                      href={`/shop?age=${encodeURIComponent(age + ' Years')}`}
+                      className="block w-full text-left px-4 py-2 text-base text-[#222D65] font-semibold rounded-xl transition duration-200 hover:bg-yellow-400 hover:text-white focus:bg-yellow-400 focus:text-white"
+                      style={{ cursor: 'pointer', display: 'block' }}
+                      tabIndex={0}
                     >
                       {age} Years
-                    </button>
+                    </a>
                   </li>
                 ))}
               </ul>
