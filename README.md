@@ -59,10 +59,17 @@ src/
 	 ```
 	 npm install
 	 ```
-2. Start development server:
-	 ```
-	 npm run dev
-	 ```
+2. Start development server locally:
+	```
+	npm run dev
+	```
+   
+3. To run on a dedicated host (production):
+	```
+	npm run build
+	npm start
+	```
+	This will serve the optimized build using your configured start script (see package.json).
 3. Visit [http://localhost:5173](http://localhost:5173) in your browser.
 
 ## Customization
